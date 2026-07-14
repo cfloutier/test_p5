@@ -18,6 +18,7 @@ Starter repo for **p5.js** experiments focused on **parametric vector drawing** 
 - `src/lib/svg-export.js` — simple SVG exporter from line segments
 - `src/lib/plotter.js` — plotter-oriented helpers
 - `src/styles.css` — minimal layout
+- `COPILOT_PROMPT.md` — handoff prompt to continue building the repo in a repo-scoped Copilot chat
 
 ## Notes
 
@@ -36,3 +37,8 @@ That makes it easier to keep the project plotter-friendly.
 - add pen color/layer support
 - add path optimization for plotting
 - add support for A3 / portrait / landscape presets
+
+## Continue in a repo-scoped Copilot prompt
+
+Open a Copilot chat directly in this repository and paste the content of `COPILOT_PROMPT.md`.
+That prompt tells Copilot exactly which files are already present and which files still need to be created to finish the starter.
