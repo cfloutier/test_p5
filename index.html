@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5 Plotter Starter</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="panel">
+        <h1>p5.js Plotter Starter</h1>
+        <p>
+          Parametric vector drawing with browser preview and SVG export for an XY
+          plotter.
+        </p>
+        <div class="actions">
+          <button id="export-svg">Export SVG</button>
+          <button id="redraw">Redraw</button>
+        </div>
+        <div class="meta" id="meta"></div>
+      </header>
+      <section class="canvas-wrap" id="canvas-wrap"></section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
