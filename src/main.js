@@ -38,7 +38,9 @@ document.getElementById('export-svg').addEventListener('click', exportCurrentSvg
 document.getElementById('redraw').addEventListener('click', regenerate);
 
 new p5((p) => {
-  const scale = config.preview.scale;
+  const canvasWrap = document.getElementById('canvas-wrap');
+  const availableWidth = canvasWrap.clientWidth || window.innerWidth - 32;
+  const scale = Math.min(config.preview.scale, availableWidth / config.document.width);
   const widthPx = mmToPx(config.document.width, scale);
   const heightPx = mmToPx(config.document.height, scale);
 
